@@ -1,0 +1,476 @@
+@import "partials/colorfunction", "partials/mixins";
+@import url('https://fonts.googleapis.com/css?family=Acme|Josefin+Sans|Jua|Philosopher');
+html {
+  scroll-behavior: smooth;
+}
+body {
+  // header
+  header {
+    @include navbar;
+    @include header;
+  }
+  ////////////////////////////////
+  section {
+    @include cart;
+    // Courses
+    .courses {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      li {
+        list-style: none;
+      }
+      .text {
+        h4 {
+          font-family: $heading2;
+          font-size: 2em;
+        }
+        li {
+          font-family: $text;
+        }
+      }
+      // add / remove Button
+      .text-center {
+        button {
+          border-radius: 4px;
+          background-color: $mainpink;
+          text-align: center;
+          font-family: $text;
+          font-size: 15px;
+          padding: 16px;
+          width: 150px;
+          margin: 36px;
+          box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+          display: inline-block;
+          position: relative;
+          transition: 0.5s;
+
+
+
+          // growing effect
+          &:after {
+            content: '';
+            position: absolute;
+            opacity: 0;
+            top: 14px;
+            right: -20px;
+            transition: 0.5s;
+          }
+          &:hover {
+            width: 160px;
+          }
+          &:hover:after {
+            opacity: 1;
+            right: 10px;
+          }
+        }
+      }
+    }
+    // welcome
+    .welcome {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+      margin: 50px auto;
+      width: 1200px;
+      h3 {
+        font-family: $heading2;
+        font-size: 2em;
+      }
+      p {
+        font-family: $text2;
+      }
+      .img {
+        width: 500px;
+      }
+    }
+    // Who We Are
+    .whoWeAre {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+      margin-top: 50px;
+      h3 {
+        font-family: $heading2;
+        font-size: 2em;
+      }
+      p {
+        font-family: $text2;
+      }
+      .text {
+        .textarea {
+          display: grid;
+          grid-template-areas:
+          'vision mission'
+          'help support';
+          grid-gap: 10px;
+          h4 {
+            font-family: $heading;
+          }
+
+          .vision {
+            grid-area: vision;
+          }
+          .mission {
+            grid-area: mission;
+          }
+          .help {
+            grid-area: help;
+          }
+          .support {
+            grid-area: support;
+          }
+        }
+      }
+    }
+    // Meet the Team
+    .theTeam {
+      width: 1200px;
+      margin: 100px auto;
+
+      h3 {
+        font-family: $heading2;
+        font-size: 2em;
+      }
+      p {
+        font-family: $text2;
+        font-size: 20px;
+      }
+
+      .members {
+        display: grid;
+        grid-template-areas:
+        'area1 area2'
+        'area3 area4';
+        grid-gap: 5px;
+        h5 {
+          font-family: $heading;
+          font-size: 20px;
+        }
+        h6 {
+          margin-top: -25px;
+          color: $grey;
+        }
+        // Emma Dicks
+        .member1 {
+          grid-area: area1;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 15px;
+        }
+        // Andrea Petersen
+        .member2 {
+          grid-area: area2;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 15px;
+        }
+        // Tegan Crous
+        .member3 {
+          grid-area: area3;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 15px;
+        }
+        // Tracy-Anne Sikenjana
+        .member4 {
+          grid-area: area4;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 15px;
+        }
+      }
+    }
+    // Count Up
+    .countUpContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      padding: 35px;
+      font-family: $text2;
+      font-size: 23px;
+      color: $lighterpink;
+      background-color: $black;
+      .countUp {
+
+        canvas {
+          width: 150px;
+          height: 150px;
+        }
+      }
+    }
+    // Subcribe Section
+    .subcribeSection {
+      width: 500px;
+      margin: 100px 500px;
+
+      h3 {
+        font-family: $heading2;
+        font-size: 2em;
+      }
+      p {
+        font-family: $text2;
+        font-size: 20px;
+      }
+
+      .subcribeHeading {
+        img {
+          display: inline;
+        }
+        h3 {
+          display: inline;
+        }
+      }
+      .subcribeField {
+        input {
+          font-family: $text;
+          background-color: $lighterpink;
+          height: 25px;
+          &:nth-child(2) {
+            height: 31px;
+            border-radius: 4px;
+            background-color: $mainpink;
+            color: $white;
+            font-family: $text;
+            width: 150px;
+            cursor: pointer;
+            box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+            transition: 0.5s;
+
+            // growing effect
+            &:after {
+              content: '';
+              opacity: 0;
+              right: -20px;
+              transition: 0.5s;
+            }
+            &:hover {
+              width: 160px;
+            }
+            &:hover:after {
+              opacity: 1;
+              right: 10px;
+            }
+          }
+        }
+      }
+    }
+    // Carousel
+    @include carousel;
+  }
+  ////////////////////////////////////////
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: $text;
+    margin-top: 30px;
+    h5 {
+      font-size: 23px;
+    }
+    .legal {
+      padding: 20px;
+      padding-top: 40px;
+    }
+    .copyright {
+      grid-column: 1 / 4;
+      background-color: $mainpink;
+      padding: 5px;
+    }
+    // to top button
+    @include to-top;
+  }
+}
+
+///////////////////////////////////////
+@media screen and (max-width: 430px) {
+  body {
+    header {
+
+      .contact-header {
+        padding: 0;
+        margin-top: 180px;
+      }
+    }
+    section {
+      display: block;
+    }
+  }
+}
+
+//////////////////////////
+@media screen and (max-width: 700px) {
+  body {
+    header {
+      nav {
+        .topnav a:not(:first-child) {display: none;}
+        .topnav a.icon {
+          float: right;
+          display: block;
+        }
+      }
+    }
+    section {
+      margin-top: 100px;
+      .courses {
+        display: inline-block;
+      }
+      .welcome {
+        display: block;
+        width: auto;
+        .img {
+          width: auto;
+        }
+      }
+
+      .whoWeAre {
+        display: block;
+      }
+
+      .theTeam {
+        width: auto;
+        .members {
+          display: block;
+          .member1 {
+            display: inline-block;
+          }
+          .member2 {
+            display: inline-block;
+          }
+          .member3 {
+            display: inline-block;
+          }
+          .member4 {
+            display: inline-block;
+          }
+        }
+      }
+
+      .countUpContainer {
+        display: block;
+        margin: 0 auto;
+      }
+
+      .subcribeSection {
+        margin: 100px auto;
+        width: auto;
+      }
+
+      .carousel-container {
+        width: auto;
+      }
+
+
+
+    }
+  }
+
+}
+
+///////////////////////////////////////////////
+
+@media screen and (max-width: 1200px) {
+  body {
+    section {
+      .welcome {
+        width: auto;
+        display: block;
+      }
+      .whoWeAre {
+        display: block;
+        .text {
+          .textarea {
+            display: block;
+          }
+        }
+      }
+      .theTeam {
+        width: auto;
+        .members {
+          display: block;
+          .member1 {
+            grid-template-columns: 1fr;
+            h5 {
+              font-size: 2em;
+            }
+          }
+          .member2 {
+            grid-template-columns: 1fr;
+            h5 {
+              font-size: 2em;
+            }
+          }
+          .member3 {
+            grid-template-columns: 1fr;
+            h5 {
+              font-size: 2em;
+            }
+          }
+          .member4 {
+            grid-template-columns: 1fr;
+            h5 {
+              font-size: 2em;
+            }
+          }
+        }
+      }
+      .subcribeSection {
+        width: auto;
+        padding: inherit;
+        margin: inherit;
+      }
+      p {
+        font-size: 2em;
+      }
+      h4 {
+        font-size: 2em;
+      }
+      .text {
+        p {
+          font-size: 2em;
+        }
+      }
+    }
+  }
+}
+//////////////////////////////////
+@media screen and (max-width: 800px) {
+  body {
+    header {
+      nav {
+        .topnav a:not(:first-child) {display: none;}
+        .topnav a.icon {
+          float: right;
+          display: block;
+        }
+      }
+      .contact-header {
+        padding: 0;
+      }
+    }
+    footer {
+      display: block;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  body {
+    header {
+      nav {
+        .topnav.responsive {position: relative;}
+        .topnav.responsive .icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        .topnav.responsive a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+        .icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+      }
+    }
+  }
+}

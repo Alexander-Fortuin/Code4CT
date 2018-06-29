@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Code4</title>
+    <script type="text/javascript" src="js/main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <!-- navbar -->
+      <nav>
+        <div class="topnav" id="myTopnav">
+          <a title="Home" href="index.html" class="active"><img src="images/logo.jpg" alt="" width="100%" height="100%"></a>
+          <a href="about.html">About</a>
+          <a href="courses.html">Courses</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="#top">Contact</a>
+           <input type="text" placeholder="Search..">
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </nav>
+      <!-- Header -->
+      <div class="contact-header">
+        <div class="header-box">
+          <h2>Contact Us</h2>
+          <h5>HOME
+            <img src="images\icons\arrow-pointing-to-right.png" alt=">" width="10px" height="10px">
+             CONTACT</h5>
+        </div>
+      </div>
+    </header>
+
+
+    <section>
+      <!-- toggle shoppping cart button -->
+      <button id="hidden" onclick="hiding()">Open Cart</button>
+      <!-- Shopping Cart -->
+      <div id="theCartContainer">
+        <div class="card-header">Cart Info</div>
+        <div class="card-body" data-kart="display">
+            <div>Total item: <span data-kart-total-item="0">0</span></div>
+            <div>Total Price: R<span data-kart-total-price="0">0.00</span></div>
+        </div>
+      </div>
+      <!--  ------------------------------------------------------------------>
+      <!-- Form -->
+      <form class="form" action="index.html" method="post">
+        <h2>Send Us a Message</h2>
+        <div class="basicInfo">
+          <input type="text" name="" value="" placeholder="Your Name">
+          <input type="email" name="" value="" placeholder="Your Email">
+          <input type="number" name="" value="" placeholder="Phone Number">
+        </div>
+        <div class="comment">
+          <textarea placeholder="Your Message" name="name" rows="8" cols="50"></textarea>
+        </div>
+        <input class="submit" type="submit" name="" value="Send Email">
+      </form>
+      <!--  ------------------------------------------------------------------>
+      <!-- Contact Info -->
+      <div class="contactInfo">
+        <h2>Contact Info</h2>
+        <ul>
+          <li>
+            <img src="images\icons\telephone.png" alt="" width="25px" height="25px">
+            021 685 0991
+          </li>
+          <li>
+            <img src="images\icons\email.png" alt="" width="25px" height="25px">
+            info@code4ct.com
+          </li>
+          <li>
+            <img src="images\icons\address.png" alt="" width="25px" height="25px">
+            Innovate South Africa, 403 Old Castle Brewery, 6 Beach Rd, Woodstock, Cape Town, 7915
+          </li>
+        </ul>
+      </div>
+      <!--  ------------------------------------------------------------------>
+      <!-- Map -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.638062446!2d18.44652591512896!3d-33.92471368064083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5d99aa2d5a49%3A0xe3d98aec2cc1ee1c!2sUrbantek!5e0!3m2!1sen!2sza!4v1529914091678" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+      <!-- Legal Notice -->
+      <div class="legal">
+        <p>Code for Cape Town is a project of Innovate South Africa, which is a registered non-profit (137806NPO) and a Public Beneficiary Organisation (930050338)</p>
+      </div>
+      <!-- Company -->
+      <div class="contactfooter">
+        <h5>Company</h5>
+        <ul>
+          <li>Physical address: Innovate South Africa, 403 Old Castle Brewery, 6 Beach </li>
+          <li>Rd, Woodstock, Cape Town, 7915</li>
+          <li>Email: info@code4ct.com </li>
+          <li>Tel: 021 685 0991</li>
+        </ul>
+      </div>
+      <!-- Help and Support -->
+      <div class="list">
+        <h5>Help & Support</h5>
+        <ul>
+          <li>Help Centre</li>
+          <li>Free Simple Template</li>
+          <li>Refund Policy</li>
+          <li>Report Span</li>
+          <!-- to top button -->
+          <a href="#top">
+            <button id="myBtn" title="Go to top">
+              <img src="images/icons/up.png" alt="Top" width="35px" height="35px">
+            </button>
+          </a>
+        </ul>
+      </div>
+      <!-- copyright -->
+      <div class="copyright">
+        copyright 2018 PRIVACY POLICY
+      </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/shopkart.js"></script>
+    <script type="text/javascript">
+
+      // shopping cart
+        $(function () {
+            $.shopkart();
+          });
+
+      /////////////////////////////////////////////
+      //shopping cart
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+  </body>
+</html>

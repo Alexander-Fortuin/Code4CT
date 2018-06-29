@@ -1,0 +1,18 @@
+$mainpink: #e38f84;
+$lighterpink: #e38f847a;
+$smallblue: #1dc1c1;
+$blackColor: #020304;
+$white: #fff;
+$black: #000;
+$grey: #919191;
+
+@mixin white-gradient {
+	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+}
+
+$animationSpeed: 40s;
+
+$heading: 'Jua', sans-serif;
+$heading2: 'Acme', sans-serif;
+$text: 'Josefin Sans', sans-serif;
+$text2: 'Philosopher', sans-serif;

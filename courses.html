@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/about-courses.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Code4</title>
+    <script type="text/javascript" src="js/main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <!-- navbar -->
+      <nav>
+        <div class="topnav" id="myTopnav">
+          <a title="Home" href="index.html" class="active"><img src="images/logo.jpg" alt="" width="100%" height="100%"></a>
+          <a href="about.html">About</a>
+          <a href="#top">Courses</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html">Contact</a>
+           <input type="text" placeholder="Search..">
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </nav>
+      <!-- Header -->
+      <div class="contact-header">
+        <div class="header-box">
+          <h2>Courses</h2>
+          <h5>HOME
+            <img src="images\icons\arrow-pointing-to-right.png" alt=">" width="10px" height="10px">
+             COURSES</h5>
+        </div>
+      </div>
+    </header>
+
+
+    <section>
+
+      <!-- toggle shoppping cart button -->
+      <button id="hidden" onclick="hiding()">Open Cart</button>
+      <!-- Shopping Cart -->
+      <div id="theCartContainer">
+        <div class="card-header">Cart Info</div>
+        <div class="card-body" data-kart="display">
+            <div>Total item: <span data-kart-total-item="0">0</span></div>
+            <div>Total Price: R<span data-kart-total-price="0">0.00</span></div>
+        </div>
+      </div>
+      <!-- Courses -->
+      <div class="courses">
+
+        <!-- item1 -->
+        <div class="items">
+          <div class="text">
+            <h4>Intro to Coding: Web Pages</h4>
+            <ul>
+              <li>Code a simple one-page website using HTML and JQuery.</li>
+              <li>Duration: 3 hours</li>
+              <li>Price: R250</li>
+            </ul>
+          </div>
+          <!-- add / remove Button -->
+          <div class="text-center">
+              <button class="btn btn-primary btn-sm btn-block"
+                  data-kart="item-button"
+                  data-kart-item-status="add-item"
+                  data-kart-item='{"id": 1, "price": 250.00}'>
+                  Add to Cart
+              </button>
+          </div>
+        </div>
+
+        <!-- item2 -->
+        <div class="items">
+          <div class="text">
+            <h4>Intro to Coding: Music</h4>
+            <ul>
+              <li>Code a song using SonicPi software on a Raspberry Pi computer.</li>
+              <li>Duration: 3 hours</li>
+              <li>Price: R250</li>
+            </ul>
+          </div>
+          <!-- add / remove Button -->
+          <div class="text-center">
+            <button class="btn btn-primary btn-sm btn-block"
+                data-kart="item-button"
+                data-kart-item-status="add-item"
+                data-kart-item='{"id": 2, "price": 250.00}'>
+                Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- item3 -->
+        <div class="items">
+          <div class="text">
+            <h4>Intro to Coding: Animation</h4>
+            <ul>
+              <li>Create a 2D animation using coding language JavaScript.</li>
+              <li>Duration: 3 hours</li>
+              <li>Price: R250</li>
+            </ul>
+          </div>
+          <!-- add / remove Button -->
+          <div class="text-center">
+            <button class="btn btn-primary btn-sm btn-block"
+                data-kart="item-button"
+                data-kart-item-status="add-item"
+                data-kart-item='{"id": 3, "price": 250.00}'>
+                Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- item4 -->
+        <div class="items">
+          <div class="text">
+            <h4>Create with Code: Web Pages</h4>
+            <ul>
+              <li>Learn how the internet works and code a simple one-page website using HTML, CSS and JQuery.</li>
+              <li>Duration: 3 days</li>
+              <li>Price: R960</li>
+            </ul>
+          </div>
+          <!-- add / remove Button -->
+          <div class="text-center">
+            <button class="btn btn-primary btn-sm btn-block"
+                data-kart="item-button"
+                data-kart-item-status="add-item"
+                data-kart-item='{"id": 3, "price": 960.00}'>
+                Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- item5 -->
+        <div class="items">
+          <div class="text">
+            <h4>Create with Code: Music</h4>
+            <ul>
+              <li>Learn computer science principles by coding music with a Raspberry Pi computer.</li>
+              <li>Duration: 3 days</li>
+              <li>Price: R960</li>
+            </ul>
+          </div>
+          <!-- add / remove Button -->
+          <div class="text-center">
+            <button class="btn btn-primary btn-sm btn-block"
+                data-kart="item-button"
+                data-kart-item-status="add-item"
+                data-kart-item='{"id": 3, "price": 960.00}'>
+                Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- item6 -->
+        <div class="items">
+          <div class="text">
+            <h4>Create with Code: Animation</h4>
+            <ul>
+              <li>Learn computer science principles by coding animations using JavaScript.</li>
+              <li>Duration: 3 days</li>
+              <li>Price: R960</li>
+            </ul>
+          </div>
+          <!-- add / remove Button -->
+          <div class="text-center">
+            <button class="btn btn-primary btn-sm btn-block"
+                data-kart="item-button"
+                data-kart-item-status="add-item"
+                data-kart-item='{"id": 3, "price": 960.00}'>
+                Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- item7 -->
+        <div class="items">
+          <div class="text">
+            <h4>Getting started as a developer</h4>
+            <ul>
+              <li>Learn how to set up a development environment and practical skills to start coding.</li>
+              <li>Duration: 3 hours</li>
+              <li>Price: R250</li>
+            </ul>
+          </div>
+          <!-- add / remove Button -->
+          <div class="text-center">
+            <button class="btn btn-primary btn-sm btn-block"
+                data-kart="item-button"
+                data-kart-item-status="add-item"
+                data-kart-item='{"id": 3, "price": 250.00}'>
+                Add to Cart
+            </button>
+          </div>
+        </div>
+
+      </div>
+      <!--  --------------------------------------------------------->
+      <!-- Subscribe Section -->
+      <div class="subcribeSection">
+        <div class="subcribeHeading">
+          <img src="images/icons/paper-plane.png" alt="" width="25px" height="25px">
+          <h3>Subscribe To Us</h3>
+        </div>
+        <p>Why don't you subcribe to us and get more.</p>
+        <div class="subcribeField">
+          <input type="email" name="" placeholder="Enter your E-mail" value="">
+          <!-- Submit Button -->
+          <input type="submit" name="" value="Submit">
+        </div>
+      </div>
+      <!--  --------------------------------------------------------->
+      <!-- Carousel -->
+      <div class="carousel-container">
+
+        <div class="carousel">
+        	<div class="slide-track">
+        		<div class="slide">
+        			<img src="images\partners\Code4CT-Partners1.png" height="100" width="250" alt="" />
+        		</div>
+        		<div class="slide">
+        			<img src="images\partners\Code4CT-Partners2.png" height="100" width="250" alt="" />
+        		</div>
+        		<div class="slide">
+        			<img src="images\partners\Code4CT-Partners3.png" height="100" width="250" alt="" />
+        		</div>
+        		<div class="slide">
+        			<img src="images\partners\Code4CT-Partners4.png" height="100" width="250" alt="" />
+        		</div>
+        		<div class="slide">
+        			<img src="images\partners\Code4CT-Partners6.png" height="100" width="250" alt="" />
+        		</div>
+        		<div class="slide">
+        			<img src="images\partners\Code4CT-Partners7.png" height="100" width="250" alt="" />
+        		</div>
+        		<div class="slide">
+        			<img src="images\partners\Code4CT-Partners8.png" height="100" width="250" alt="" />
+        		</div>
+        		<div class="slide">
+        			<img src="images\partners\Code4CT-Partners9.png" height="100" width="250" alt="" />
+        		</div>
+        		<div class="slide">
+        			<img src="images\partners\Code4CT-Partners10.png" height="100" width="250" alt="" />
+        		</div>
+        		<div class="slide">
+        			<img src="images\partners\Code4CT-Partners11.png" height="100" width="250" alt="" />
+        		</div>
+        		<div class="slide">
+        			<img src="images\partners\Code4CT-Partners12.png" height="100" width="250" alt="" />
+        		</div>
+        		<div class="slide">
+        			<img src="images\partners\Code4CT-Partners13.png" height="100" width="250" alt="" />
+        		</div>
+        		<div class="slide">
+        			<img src="images\partners\Code4CT-Partners14.png" height="100" width="250" alt="" />
+        		</div>
+        		<div class="slide">
+        			<img src="images\partners\Code4CT-Partners15.png" height="100" width="250" alt="" />
+        		</div>
+        	</div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+      <!-- Legal Notice -->
+      <div class="legal">
+        <p>Code for Cape Town is a project of Innovate South Africa, which is a registered non-profit (137806NPO) and a Public Beneficiary Organisation (930050338)</p>
+      </div>
+      <!-- Company -->
+      <div class="contactfooter">
+        <h5>Company</h5>
+        <ul>
+          <li>Physical address: Innovate South Africa, 403 Old Castle Brewery, 6 Beach </li>
+          <li>Rd, Woodstock, Cape Town, 7915</li>
+          <li>Email: info@code4ct.com </li>
+          <li>Tel: 021 685 0991</li>
+        </ul>
+      </div>
+      <!-- Help and Support -->
+      <div class="list">
+        <h5>Help & Support</h5>
+        <ul>
+          <li>Help Centre</li>
+          <li>Free Simple Template</li>
+          <li>Refund Policy</li>
+          <li>Report Span</li>
+          <!-- to top button -->
+          <a href="#top">
+            <button id="myBtn" title="Go to top">
+              <img src="images/icons/up.png" alt="Top" width="35px" height="35px">
+            </button>
+          </a>
+
+
+        </ul>
+      </div>
+      <div class="copyright">
+        copyright 2018 PRIVACY POLICY
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/shopkart.js"></script>
+    <script>
+    // shopping cart
+      $(function () {
+          $.shopkart();
+        });
+    </script>
+    <script type="text/javascript">
+
+
+    /////////////////////////////////////////////
+    //shopping cart
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-36251023-1']);
+      _gaq.push(['_setDomainName', 'jqueryscript.net']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+  </body>
+</html>

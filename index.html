@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Code4</title>
+    <script type="text/javascript" src="js/main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <!-- navbar -->
+      <nav>
+        <div class="topnav" id="myTopnav">
+          <a title="Home" href="#top" class="active"><img src="images/logo.jpg" alt="" width="100%" height="100%"></a>
+          <a href="about.html">About</a>
+          <a href="courses.html">Courses</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html">Contact</a>
+           <input type="text" placeholder="Search..">
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </nav>
+
+      <!-- header content -->
+      <div id="top" class="header">
+
+          <!-- slider -->
+        <div class="slider">
+          <div class="slideshow-container">
+
+          <div class="mySlides">
+            <img src="images/homepage.jpg" height="100%" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <img src="images/code4ct_homeslider2.jpg" height="100%" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <img src="images/code4ct_homeslider3.jpg" height="100%" style="width:100%">
+          </div>
+
+          <!-- next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          </div>
+
+          <br>
+          <!-- dots for slider -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+        </div>
+
+        <!-- header content -->
+        <div class="header-content">
+          <h4>Code for Cape Town</h4>
+          <p>We want to see young women empowered to leverage technology for social innovation, so that there is greater diversity in the African tech industry. We want high school girls to have an enabling environment to imagine and create new technology that is relevant to a South African context.</p>
+          <!-- buttons -->
+          <button class="btn1"><a href="courses.html"><span>Start Coding</span></a></button>
+          <button class="btn2"><a href="about.html"><span>More About Us</span></a></button>
+        </div>
+      </div>
+
+    </header>
+    <!-- --------------------------------------------------->
+    <section>
+      <!-- toggle shoppping cart button -->
+      <button id="hidden" onclick="hiding()">Open Cart</button>
+      <!-- Shopping Cart -->
+      <div id="theCartContainer">
+        <div class="card-header">Cart Info</div>
+        <div class="card-body" data-kart="display">
+            <div>Total item: <span data-kart-total-item="0">0</span></div>
+            <div>Total Price: R<span data-kart-total-price="0">0.00</span></div>
+        </div>
+      </div>
+      <!--  ------------------------------------------------------------------>
+      <!-- Who we are (content) -->
+      <div class="who">
+        <div class="text">
+          <h3>Who We Are</h3>
+          <p>Code for Cape Town strives to see young women empowered to leverage technology for social innovation, so that there is greater diversity in the African tech industry.  Code for Cape Town equips high potential female learners with the coding, problem solving and life skills that will allow them to leverage technology to contribute meaningfully to South Africa’s innovation system.</p>
+        </div>
+        <!-- images -->
+        <div class="images">
+          <div class="pic1">
+            <img src="images/Code-Camp.jpg" alt="" width="100%" height="100%">
+          </div>
+          <div class="pic2">
+            <img src="images/Code-Camp2.jpg" width="100%" height="100%" alt="">
+          </div>
+          <div class="pic3">
+            <img src="images/Code-Camp3.jpg" width="100%" height="100%" alt="">
+          </div>
+          <div class="pic4">
+            <img src="images/Code-Camp4.jpg" width="100%" height="100%" alt="">
+          </div>
+        </div>
+      </div>
+
+      <!-- Icon section -->
+      <div class="icons">
+
+        <!-- Coding -->
+        <div class="coding">
+          <img src="images/icons/screen.png" alt="" height="100px" width="100px">
+          <h4>Coding</h4>
+          <p>Learn how to build your own websites using HTML, CSS, JavaScript & JQuery. Go on to explore exciting modules from game development to user experience design.</p>
+        </div>
+        <!-- Communication -->
+        <div class="communication">
+          <img src="images/icons/speaker.png" alt="" height="100px" width="100px">
+          <h4>Communication</h4>
+          <p>Learn how to pitch ideas, represent yourself online, communicate professionally and work with online collaboration tools.</p>
+        </div>
+        <!-- Problem Solving -->
+        <div class="problem-solving">
+          <img src="images/icons/wrench.png" alt="" height="100px" width="100px">
+          <h4>Problem Solving</h4>
+          <p>Apply your coding skills to issues you are interested in. You will learn how to tackle complex problems using the design thinking process.</p>
+        </div>
+        <!-- Career Guidance -->
+        <div class="career-guide">
+          <img src="images/icons/documents.png" alt="" height="100px" width="100px">
+          <h4>Career Guidance</h4>
+          <p>Explore future options by meeting different companies doing exciting things with technology. We offer career testing and connect you to our network of study institutions and bursary programs.</p>
+        </div>
+      </div>
+
+      <!-- Our Awesome Profile -->
+      <div class="profile">
+        <h3>Our Awesome Profile</h3>
+        <p>Code4CT was given an award by the Shuttleworth Foundation fellows in recognition of social change.
+          <br>
+          The Shuttleworth Foundation is a small social investor that provides funding to dynamic leaders who are at the forefront of social change. They look for social innovators who are helping to change the world for the better and could benefit from a social investment model with a difference.</p>
+          <p>Every year, Mail and Guardian Magazine lists the Top 200 South Africans based off of the nominations submitted by the public. The list aims to showcase the best young people South Africa has to offer.
+            <br>
+            The article profiles interesting young people who have stood out from the pack and who reflect what there is to look forward to in the country’s future. These under-35s are talented and have shown themselves to be leaders.</p>
+            <!-- Profile images -->
+        <div class="profilepics">
+
+          <div class="grid-container">
+
+            <div class="img1">
+              <img src="images/code4ct1.jpg" alt="">
+            </div>
+            <div class="img2">
+              <img src="images/code4ct2.jpeg" alt="">
+            </div>
+            <div class="img3">
+              <img src="images/code4ct5.png" alt="">
+            </div>
+            <div class="img4">
+              <img src="images/code4ct4.jpg" alt="">
+            </div>
+
+          </div>
+
+          <div class="img5">
+            <img src="images/code4ct3.png" alt="" width="100%" height="100%">
+          </div>
+
+        </div>
+      </div>
+      <!--  --------------------------------------------------------------->
+      <!-- Meet the Team -->
+      <div class="theTeam">
+        <h3>Meet Our Team</h3>
+
+        <p>Code for Cape Town has a well dedicated team who works hard on empowering young women.
+          <br>
+          These are the core team members.</p>
+          <!-- Emma Dicks -->
+        <div class="members">
+          <div class="member1">
+            <img src="images/team1.png" alt="">
+            <div class="text">
+              <h5>Emma Dicks</h5>
+              <h6>Founder and Director</h6>
+              <p>Emma is passionate about providing high quality education that enables young people to bring innovative ideas to life and play an active role in South Africa’s economy.</p>
+            </div>
+          </div>
+          <!-- Andrea Petersen -->
+          <div class="member2">
+            <img src="images/team2.png" alt="">
+            <div class="text">
+              <h5>Andrea Petersen</h5>
+              <h6>Operations Lead</h6>
+              <p>Andrea thrives on seeing key players in the Code4CT ecosystem discover how they can make the greatest impact.</p>
+            </div>
+          </div>
+          <!-- Tegan Crous -->
+          <div class="member3">
+            <img src="images/team3.png" alt="">
+            <div class="text">
+              <h5>Tegan Crous</h5>
+              <h6>Program Lead</h6>
+              <p>Tegan heads up the high school program.
+                <br>
+                She is spurred on by a heart for people and seeing them pursue their potential in a safe, fun and nurturing environment.</p>
+            </div>
+          </div>
+          <!-- Tracy-Anne Sikenjana -->
+          <div class="member4">
+            <img src="images/team4.png" alt="">
+            <div class="text">
+              <h5>Tracy-Anne Sikenjana</h5>
+              <h6>Leadership Program Coordinator</h6>
+              <p>She believes in helping young girls realize the potential they have to become game changers in their local communities.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  ---------------------------------------------------------------->
+      <!-- Count up -->
+      <div class="countUpContainer">
+        <div class="countUp">
+          <div class="value" id="value">3000</div><!-- cups of coffee -->
+          <div class="text">
+            Cups of coffee
+          </div>
+        </div>
+        <div class="countUp">
+          <div class="value" id="value2">780</div><!-- number of girls -->
+          <div class="text">
+            Number of Girls
+          </div>
+        </div>
+        <div class="countUp">
+          <div class="value" id="value3">3120</div><!-- projects completed -->
+          <div class="text">
+            Projects Completed
+          </div>
+        </div>
+        <div class="countUp">
+          <div class="value" id="value4">8765</div><!-- hours of coding-->
+          <div class="text">
+            Hours of Coding
+          </div>
+        </div>
+      </div>
+      <!--  ----------------------------------------------------------------->
+      <!-- Subscribe Section -->
+      <div class="subcribeSection">
+        <div class="subcribeHeading">
+          <img src="images/icons/paper-plane.png" alt="" width="25px" height="25px">
+          <h3>Subscribe To Us</h3>
+        </div>
+        <p>Why don't you subcribe to us and get more.</p>
+        <div class="subcribeField">
+          <input type="email" name="" placeholder="Enter your E-mail" value="">
+          <!-- Submit button -->
+          <input type="submit" name="" value="Submit">
+        </div>
+      </div>
+      <!--  ------------------------------------------------------------------>
+      <!-- Carousel -->
+      <div class="carousel-container">
+
+        <div class="carousel">
+        	<div class="slide-track">
+        		<div class="slide">
+        			<img src="images\partners\Code4CT-Partners1.png" height="100" width="250" alt="" />
+        		</div>
+        		<div class="slide">
+        			<img src="images\partners\Code4CT-Partners2.png" height="100" width="250" alt="" />
+        		</div>
+        		<div class="slide">
+        			<img src="images\partners\Code4CT-Partners3.png" height="100" width="250" alt="" />
+        		</div>
+        		<div class="slide">
+        			<img src="images\partners\Code4CT-Partners4.png" height="100" width="250" alt="" />
+        		</div>
+        		<div class="slide">
+        			<img src="images\partners\Code4CT-Partners6.png" height="100" width="250" alt="" />
+        		</div>
+        		<div class="slide">
+        			<img src="images\partners\Code4CT-Partners7.png" height="100" width="250" alt="" />
+        		</div>
+        		<div class="slide">
+        			<img src="images\partners\Code4CT-Partners8.png" height="100" width="250" alt="" />
+        		</div>
+        		<div class="slide">
+        			<img src="images\partners\Code4CT-Partners9.png" height="100" width="250" alt="" />
+        		</div>
+        		<div class="slide">
+        			<img src="images\partners\Code4CT-Partners10.png" height="100" width="250" alt="" />
+        		</div>
+        		<div class="slide">
+        			<img src="images\partners\Code4CT-Partners11.png" height="100" width="250" alt="" />
+        		</div>
+        		<div class="slide">
+        			<img src="images\partners\Code4CT-Partners12.png" height="100" width="250" alt="" />
+        		</div>
+        		<div class="slide">
+        			<img src="images\partners\Code4CT-Partners13.png" height="100" width="250" alt="" />
+        		</div>
+        		<div class="slide">
+        			<img src="images\partners\Code4CT-Partners14.png" height="100" width="250" alt="" />
+        		</div>
+        		<div class="slide">
+        			<img src="images\partners\Code4CT-Partners15.png" height="100" width="250" alt="" />
+        		</div>
+        	</div>
+        </div>
+
+      </div>
+
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+      <!-- Legal Notice -->
+      <div class="legal">
+        <p>Code for Cape Town is a project of Innovate South Africa, which is a registered non-profit (137806NPO) and a Public Beneficiary Organisation (930050338)</p>
+      </div>
+      <!-- Company -->
+      <div class="contactfooter">
+        <h5>Company</h5>
+        <ul>
+          <li>Physical address: Innovate South Africa, 403 Old Castle Brewery, 6 Beach </li>
+          <li>Rd, Woodstock, Cape Town, 7915</li>
+          <li>Email: info@code4ct.com </li>
+          <li>Tel: 021 685 0991</li>
+        </ul>
+      </div>
+      <!-- Help and Support -->
+      <div class="list">
+        <h5>Help & Support</h5>
+        <ul>
+          <li>Help Centre</li>
+          <li>Free Simple Template</li>
+          <li>Refund Policy</li>
+          <li>Report Span</li>
+          <!-- to top button -->
+          <a href="#top">
+            <button id="myBtn" title="Go to top">
+              <img src="images/icons/up.png" alt="Top" width="35px" height="35px">
+            </button>
+          </a>
+        </ul>
+      </div>
+      <!-- copyright -->
+      <div class="copyright">
+        copyright 2018 PRIVACY POLICY
+      </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/shopkart.js"></script>
+    <script type="text/javascript">
+
+    // shopping cart
+      $(function () {
+          $.shopkart();
+        });
+
+
+    /////////////////////////////////////////////
+    //shopping cart
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-36251023-1']);
+      _gaq.push(['_setDomainName', 'jqueryscript.net']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    ////////////////////////////////////////////
+      // count up
+      function animateValue(id, start, end, duration) {
+        var range = end - start;
+        var current = start;
+        var increment = end > start? 1 : -1;
+        var stepTime = Math.abs(Math.floor(duration / range));
+        var obj = document.getElementById(id);
+        var timer = setInterval(function() {
+            current += increment;
+            obj.innerHTML = current + "+";
+            if (current == end) {
+                clearInterval(timer);
+            }
+        }, stepTime);
+      }
+
+      animateValue("value", 0, 3000, 2000);
+
+      var myOtherFriend = new animateValue("value2", 0, 780, 2000);
+      var myOtherFriend = new animateValue("value3", 0, 3120, 2000);
+      var myOtherFriend = new animateValue("value4", 0, 8765, 2000);
+
+    ////////////////////////////////////////
+    // slider
+    var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = " block";
+        dots[slideIndex-1].className += " active";
+      }
+    </script>
+  </body>
+</html>
