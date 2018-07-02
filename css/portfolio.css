@@ -240,48 +240,50 @@ body footer {
     box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7); }
   body footer #myBtn:hover {
     background-color: #e38f84; }
+
 @media screen and (max-width: 800px) {
-  body body header nav .topnav a:not(:first-child) {
+  body header nav .topnav a:not(:first-child) {
     display: none; }
-  body body header nav .topnav a.icon {
+  body header nav .topnav a.icon {
     float: right;
     display: block; }
-  body body header .contact-header {
+  body header .contact-header {
     padding: 0; }
-  body body section .row .column {
+  body section .row .column {
     width: 50%; }
-    body body section .row .column:hover {
+    body section .row .column:hover {
       transform: scale(1); }
-  body body footer {
+  body footer {
     display: block; }
-  body body header nav .topnav.responsive {
+
+  body header nav .topnav.responsive {
     position: relative; }
-  body body header nav .topnav.responsive .icon {
+  body header nav .topnav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0; }
-  body body header nav .topnav.responsive a {
+  body header nav .topnav.responsive a {
     float: none;
     display: block;
     text-align: left; }
-  body body header nav .icon {
+  body header nav .icon {
     position: absolute;
     right: 0;
     top: 0; } }
 @media screen and (max-width: 600px) {
-  body body section .row {
+  body section .row {
     margin: 0;
     display: grid;
     grid-template-columns: 1fr; }
-    body body section .row .column {
+    body section .row .column {
       width: 100%; }
-  body body section .modal .modal-content .mySlides {
+  body section .modal .modal-content .mySlides {
     height: 300px; } }
 @media screen and (max-width: 430px) {
-  body body header .contact-header {
+  body header .contact-header {
     padding: 0;
     margin-top: 180px; }
-  body body section .modal .close {
+  body section .modal .close {
     top: 380px; } }
 
 /*# sourceMappingURL=portfolio.css.map */
