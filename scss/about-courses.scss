@@ -4,6 +4,11 @@ html {
   scroll-behavior: smooth;
 }
 body {
+
+  input {
+    border: 2px solid #e38f84;
+    background-color: #e38f847a;
+  }
   // header
   header {
     @include navbar;
@@ -25,7 +30,7 @@ body {
           font-size: 2em;
         }
         li {
-          font-family: $text;
+          font-family: $text2;
         }
       }
       // add / remove Button
@@ -34,7 +39,7 @@ body {
           border-radius: 4px;
           background-color: $mainpink;
           text-align: center;
-          font-family: $text;
+          font-family: $text2;
           font-size: 15px;
           padding: 16px;
           width: 150px;
@@ -104,7 +109,7 @@ body {
           'help support';
           grid-gap: 10px;
           h4 {
-            font-family: $heading;
+            font-family: $heading2;
           }
 
           .vision {
@@ -143,7 +148,7 @@ body {
         'area3 area4';
         grid-gap: 5px;
         h5 {
-          font-family: $heading;
+          font-family: $heading2;
           font-size: 20px;
         }
         h6 {
@@ -221,7 +226,7 @@ body {
       }
       .subcribeField {
         input {
-          font-family: $text;
+          font-family: $text2;
           background-color: $lighterpink;
           height: 25px;
           &:nth-child(2) {
@@ -229,7 +234,7 @@ body {
             border-radius: 4px;
             background-color: $mainpink;
             color: $white;
-            font-family: $text;
+            font-family: $text2;
             width: 150px;
             cursor: pointer;
             box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
@@ -260,7 +265,7 @@ body {
   footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    font-family: $text;
+    font-family: $text2;
     margin-top: 30px;
     h5 {
       font-size: 23px;
@@ -276,6 +281,9 @@ body {
     }
     // to top button
     @include to-top;
+
+    // Footer Icons
+    @include footerIcons;
   }
 }
 
@@ -447,6 +455,13 @@ body {
     }
     footer {
       display: block;
+      .copyright {
+        .footerIcons {
+          margin: 0;
+          display: block;
+          float: none;
+        }
+      }
     }
   }
 }
@@ -474,3 +489,17 @@ body {
     }
   }
 }
+///////////////////////////////////////
+//////////////////
+ @media screen and (max-width: 450px) {
+   body {
+     section {
+         .text {
+           p {
+             font-size: 18px;
+           }
+         }
+
+     }
+   }
+ }

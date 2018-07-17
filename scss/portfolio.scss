@@ -5,21 +5,25 @@ html {
 }
 body {
 
+  input {
+    border: 2px solid #e38f84;
+    background-color: #e38f847a;
+  }
   header {
     @include navbar;
     @include header;
   }
   ////////////////////////////////
   section {
-        @include cart;
+      @include cart;
 
     // intro
     .intro {
       h2 {
-        font-family: $heading;
+        font-family: $heading2;
       }
       p {
-        font-family: $text;
+        font-family: $text2;
       }
     }
     .row {
@@ -137,7 +141,7 @@ body {
   footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    font-family: $text;
+    font-family: $text2;
     margin-top: 30px;
     h5 {
       font-size: 23px;
@@ -153,6 +157,9 @@ body {
     }
     // to top button
     @include to-top;
+
+    // Footer Icons
+    @include footerIcons;
   }
 }
 
@@ -249,6 +256,15 @@ body {
       .modal {
         .close {
           top: 380px;
+        }
+      }
+    }
+    footer {
+      .copyright {
+        .footerIcons {
+          margin: 0;
+          display: block;
+          float: none;
         }
       }
     }

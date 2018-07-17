@@ -2,9 +2,6 @@
 html {
   scroll-behavior: smooth; }
 
-body input {
-  border: 2px solid #e38f84;
-  background-color: #e38f847a; }
 body header nav {
   position: fixed;
   top: 0;
@@ -67,12 +64,11 @@ body section {
     border: 2px solid #e38f847a;
     border-radius: 12px 12px 12px 12px;
     display: none;
-    top: 157px;
-    z-index: 98; }
+    top: 320px; }
   body section #hidden {
     position: fixed;
     right: 0;
-    top: 122px;
+    top: 285px;
     cursor: pointer;
     width: auto;
     padding: 16px;
@@ -98,7 +94,7 @@ body section {
       border-radius: 4px;
       background-color: #e38f84;
       color: #fff;
-      font-family: "Philosopher", sans-serif;
+      font-family: "Josefin Sans", sans-serif;
       width: 150px;
       cursor: pointer;
       box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
@@ -116,7 +112,7 @@ body section {
   body section .contactInfo {
     grid-column: 2 / 3; }
     body section .contactInfo li {
-      font-family: "Philosopher", sans-serif;
+      font-family: "Josefin Sans", sans-serif;
       list-style: none; }
   body section iframe {
     margin-top: 100px;
@@ -124,7 +120,7 @@ body section {
 body footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  font-family: "Philosopher", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   margin-top: 30px; }
   body footer h5 {
     font-size: 23px; }
@@ -152,13 +148,6 @@ body footer {
     box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7); }
   body footer #myBtn:hover {
     background-color: #e38f84; }
-  body footer .copyright .footerIcons {
-    margin-right: 50px;
-    display: inline-block;
-    float: right; }
-    body footer .copyright .footerIcons i {
-      font-size: 20px;
-      padding-left: 20px; }
 
 @media screen and (min-width: 1000px) {
   body section form .comment textarea {
@@ -180,11 +169,7 @@ body footer {
   body header .contact-header {
     padding: 0; }
   body footer {
-    display: block; }
-    body footer .copyright .footerIcons {
-      margin: 0;
-      display: block;
-      float: none; } }
+    display: block; } }
 @media screen and (max-width: 800px) {
   body header nav .topnav.responsive {
     position: relative; }

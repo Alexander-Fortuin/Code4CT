@@ -5,9 +5,6 @@ html {
 body {
   display: grid;
   grid-template-areas: 'header' 'header' 'section' 'section' 'footer'; }
-  body input {
-    border: 2px solid #e38f84;
-    background-color: #e38f847a; }
   body header {
     grid-area: header; }
     body header nav {
@@ -41,44 +38,9 @@ body {
             height: 80px;
             width: 200px;
             padding: 0; }
-    body header nav .topnav #theCartContainer {
-      position: fixed;
-      width: 220px;
-      background: #e38f84;
-      right: 0;
-      padding: 16px;
-      font-weight: bold;
-      font-family: "Philosopher", sans-serif;
-      font-size: 18px;
-      transition: 0.6s ease;
-      border: 2px solid #e38f847a;
-      border-radius: 12px 12px 12px 12px;
-      display: none;
-      top: 157px;
-      z-index: 98; }
-    body header nav .topnav #hidden {
-      position: fixed;
-      right: 0;
-      top: 122px;
-      cursor: pointer;
-      width: auto;
-      padding: 16px;
-      margin-top: -22px;
-      color: #fff;
-      background-color: #e38f847a;
-      font-weight: bold;
-      font-size: 18px;
-      transition: 0.6s ease;
-      border-radius: 0 3px 3px 0; }
-    body header nav .topnav #hidden {
-      left: 0;
-      top: inherit;
-      margin: 0;
-      position: relative; }
     body header nav .topnav .icon {
       display: none; }
     body header .header {
-      width: 100%;
       padding-top: 20px;
       margin-top: 2em;
       display: grid;
@@ -155,11 +117,11 @@ body {
         grid-template-columns: 1fr 40% 40% 1fr;
         grid-template-rows: auto; }
         body header .header .header-content h4 {
-          font-family: "Acme", sans-serif;
+          font-family: "Jua", sans-serif;
           font-size: 2em;
           grid-column: 1 / 5; }
         body header .header .header-content p {
-          font-family: "Philosopher", sans-serif;
+          font-family: "Josefin Sans", sans-serif;
           font-size: 20px;
           grid-column: 1 / 5; }
         body header .header .header-content .btn1 {
@@ -170,7 +132,7 @@ body {
           border-radius: 4px;
           background-color: #e38f84;
           text-align: center;
-          font-family: "Philosopher", sans-serif;
+          font-family: "Josefin Sans", sans-serif;
           font-size: 15px;
           padding: 16px;
           width: 150px;
@@ -199,6 +161,8 @@ body {
   body section {
     grid-area: section; }
     body section #theCartContainer {
+      top: 320px; }
+    body section #theCartContainer {
       position: fixed;
       width: 220px;
       background: #e38f84;
@@ -211,12 +175,11 @@ body {
       border: 2px solid #e38f847a;
       border-radius: 12px 12px 12px 12px;
       display: none;
-      top: 157px;
-      z-index: 98; }
+      top: 320px; }
     body section #hidden {
       position: fixed;
       right: 0;
-      top: 122px;
+      top: 285px;
       cursor: pointer;
       width: auto;
       padding: 16px;
@@ -227,8 +190,6 @@ body {
       font-size: 18px;
       transition: 0.6s ease;
       border-radius: 0 3px 3px 0; }
-    body section #theCartContainer {
-      top: 84px; }
     body section .who {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -270,7 +231,7 @@ body {
       grid-gap: 5px;
       background-color: #000;
       padding: 15px;
-      width: 98%; }
+      width: 100%; }
       body section .icons h4 {
         color: #e38f84;
         font-family: "Acme", sans-serif;
@@ -318,7 +279,7 @@ body {
         grid-template-areas: 'area1 area2' 'area3 area4';
         grid-gap: 5px; }
         body section .theTeam .members h5 {
-          font-family: "Acme", sans-serif;
+          font-family: "Jua", sans-serif;
           font-size: 20px; }
         body section .theTeam .members h6 {
           margin-top: -25px;
@@ -370,7 +331,7 @@ body {
       body section .subcribeSection .subcribeHeading h3 {
         display: inline; }
       body section .subcribeSection .subcribeField input {
-        font-family: "Philosopher", sans-serif;
+        font-family: "Josefin Sans", sans-serif;
         background-color: #e38f847a;
         height: 25px; }
         body section .subcribeSection .subcribeField input:nth-child(2) {
@@ -433,7 +394,7 @@ body {
     grid-area: footer;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    font-family: "Philosopher", sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     margin-top: 30px; }
     body footer h5 {
       font-size: 23px; }
@@ -461,13 +422,6 @@ body {
       box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7); }
     body footer #myBtn:hover {
       background-color: #e38f84; }
-    body footer .copyright .footerIcons {
-      margin-right: 50px;
-      display: inline-block;
-      float: right; }
-      body footer .copyright .footerIcons i {
-        font-size: 20px;
-        padding-left: 20px; }
 
 @media screen and (max-width: 700px) {
   body header nav .topnav a:not(:first-child) {
@@ -475,21 +429,23 @@ body {
   body header nav .topnav a.icon {
     float: right;
     display: block; }
-  body header .header .slider .slideshow-container {
-    height: 400px; }
-    body header .header .slider .slideshow-container .mySlides {
+  body header .header {
+    width: 600px; }
+    body header .header .slider .slideshow-container {
       height: 400px; }
-  body header .header .header-content {
-    display: block;
-    height: auto;
-    padding: 8px; }
-    body header .header .header-content h4 {
-      font-size: 15px; }
-    body header .header .header-content p {
-      font-size: 12px; }
-    body header .header .header-content button {
-      margin: 5px;
-      margin-left: 15px; }
+      body header .header .slider .slideshow-container .mySlides {
+        height: 400px; }
+    body header .header .header-content {
+      display: block;
+      height: auto;
+      padding: 8px; }
+      body header .header .header-content h4 {
+        font-size: 15px; }
+      body header .header .header-content p {
+        font-size: 12px; }
+      body header .header .header-content button {
+        margin: 5px;
+        margin-left: 15px; }
   body section {
     margin-top: 100px; }
     body section .who {
@@ -527,7 +483,7 @@ body {
     body section .subcribeSection {
       margin: 100px auto; }
     body section .carousel-container {
-      width: 98%; } }
+      width: 600px; } }
 @media screen and (max-width: 700px) {
   body header nav .topnav.responsive {
     position: relative; }
@@ -539,70 +495,5 @@ body {
     float: none;
     display: block;
     text-align: left; } }
-@media screen and (max-width: 450px) {
-  body header {
-    margin: 0;
-    padding: 0; }
-    body header nav {
-      width: 100%;
-      margin: 0;
-      padding: 0; }
-    body header .header {
-      width: 411px;
-      margin: 0;
-      margin-top: 100px;
-      padding: 0; }
-      body header .header .slider {
-        width: 100%; }
-      body header .header .header-content {
-        margin: 0;
-        padding: 0; }
-  body section #theCartContainer {
-    top: 164px; }
-  body section .who {
-    width: 100%;
-    margin: 0;
-    padding: 0; }
-    body section .who .text p {
-      font-size: 18px; }
-  body section .icons {
-    width: 100%;
-    margin: 0;
-    padding: 0; }
-  body section .profile {
-    width: 100%;
-    margin: 0;
-    padding: 0; }
-    body section .profile p {
-      font-size: 18px; }
-  body section .theTeam {
-    width: 100%;
-    margin: 0;
-    padding: 0; }
-    body section .theTeam p {
-      font-size: 18px; }
-  body section .countUpContainer {
-    width: 100%;
-    margin: 0;
-    padding: 0; }
-  body section .subcribeSection {
-    width: 100%;
-    margin: 0;
-    padding-top: 15px;
-    padding-bottom: 15px; }
-  body section .carousel-container {
-    width: 411px;
-    margin: 0;
-    padding: 0; }
-    body section .carousel-container .carousel {
-      width: 100%; }
-  body footer {
-    width: 100%;
-    margin: 0;
-    padding: 0; }
-    body footer .copyright .footerIcons {
-      margin: 0;
-      display: block;
-      float: none; } }
 
 /*# sourceMappingURL=style.css.map */

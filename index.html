@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Code4</title>
@@ -17,7 +18,11 @@
           <a href="courses.html">Courses</a>
           <a href="portfolio.html">Portfolio</a>
           <a href="contact.html">Contact</a>
+
            <input type="text" placeholder="Search..">
+           <!-- toggle shoppping cart button -->
+           <button id="hidden" onclick="hiding()">Open Cart</button>
+
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
           </a>
@@ -71,8 +76,6 @@
     </header>
     <!-- --------------------------------------------------->
     <section>
-      <!-- toggle shoppping cart button -->
-      <button id="hidden" onclick="hiding()">Open Cart</button>
       <!-- Shopping Cart -->
       <div id="theCartContainer">
         <div class="card-header">Cart Info</div>
@@ -352,6 +355,14 @@
       <!-- copyright -->
       <div class="copyright">
         copyright 2018 PRIVACY POLICY
+
+        <div class="footerIcons">
+          Follow Us:
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-pinterest-p"></i>
+          <i class="fab fa-google-plus-g"></i>
+          <i class="fab fa-linkedin-in"></i>
+        </div>
       </div>
     </footer>
 

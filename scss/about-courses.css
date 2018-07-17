@@ -2,9 +2,6 @@
 html {
   scroll-behavior: smooth; }
 
-body input {
-  border: 2px solid #e38f84;
-  background-color: #e38f847a; }
 body header nav {
   position: fixed;
   top: 0;
@@ -63,12 +60,11 @@ body section #theCartContainer {
   border: 2px solid #e38f847a;
   border-radius: 12px 12px 12px 12px;
   display: none;
-  top: 157px;
-  z-index: 98; }
+  top: 320px; }
 body section #hidden {
   position: fixed;
   right: 0;
-  top: 122px;
+  top: 285px;
   cursor: pointer;
   width: auto;
   padding: 16px;
@@ -88,12 +84,12 @@ body section .courses {
     font-family: "Acme", sans-serif;
     font-size: 2em; }
   body section .courses .text li {
-    font-family: "Philosopher", sans-serif; }
+    font-family: "Josefin Sans", sans-serif; }
   body section .courses .text-center button {
     border-radius: 4px;
     background-color: #e38f84;
     text-align: center;
-    font-family: "Philosopher", sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     font-size: 15px;
     padding: 16px;
     width: 150px;
@@ -142,7 +138,7 @@ body section .whoWeAre {
     grid-template-areas: 'vision mission' 'help support';
     grid-gap: 10px; }
     body section .whoWeAre .text .textarea h4 {
-      font-family: "Acme", sans-serif; }
+      font-family: "Jua", sans-serif; }
     body section .whoWeAre .text .textarea .vision {
       grid-area: vision; }
     body section .whoWeAre .text .textarea .mission {
@@ -165,7 +161,7 @@ body section .theTeam {
     grid-template-areas: 'area1 area2' 'area3 area4';
     grid-gap: 5px; }
     body section .theTeam .members h5 {
-      font-family: "Acme", sans-serif;
+      font-family: "Jua", sans-serif;
       font-size: 20px; }
     body section .theTeam .members h6 {
       margin-top: -25px;
@@ -215,7 +211,7 @@ body section .subcribeSection {
   body section .subcribeSection .subcribeHeading h3 {
     display: inline; }
   body section .subcribeSection .subcribeField input {
-    font-family: "Philosopher", sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     background-color: #e38f847a;
     height: 25px; }
     body section .subcribeSection .subcribeField input:nth-child(2) {
@@ -223,7 +219,7 @@ body section .subcribeSection {
       border-radius: 4px;
       background-color: #e38f84;
       color: #fff;
-      font-family: "Philosopher", sans-serif;
+      font-family: "Josefin Sans", sans-serif;
       width: 150px;
       cursor: pointer;
       box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
@@ -277,7 +273,7 @@ body section .carousel-container {
 body footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  font-family: "Philosopher", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   margin-top: 30px; }
   body footer h5 {
     font-size: 23px; }
@@ -305,13 +301,6 @@ body footer {
     box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7); }
   body footer #myBtn:hover {
     background-color: #e38f84; }
-  body footer .copyright .footerIcons {
-    margin-right: 50px;
-    display: inline-block;
-    float: right; }
-    body footer .copyright .footerIcons i {
-      font-size: 20px;
-      padding-left: 20px; }
 
 @media screen and (max-width: 430px) {
   body header .contact-header {
@@ -403,11 +392,7 @@ body footer {
   body header .contact-header {
     padding: 0; }
   body footer {
-    display: block; }
-    body footer .copyright .footerIcons {
-      margin: 0;
-      display: block;
-      float: none; } }
+    display: block; } }
 @media screen and (max-width: 800px) {
   body header nav .topnav.responsive {
     position: relative; }
@@ -423,8 +408,5 @@ body footer {
     position: absolute;
     right: 0;
     top: 0; } }
-@media screen and (max-width: 450px) {
-  body section .text p {
-    font-size: 18px; } }
 
 /*# sourceMappingURL=about-courses.css.map */
